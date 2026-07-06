@@ -6,251 +6,103 @@
     <title>Telotrope Agents | AI Research & Development</title>
     <style>
         :root {
-            /* The GovCon R&D Blueprint Palette */
-            --bg-color: #FFFFFF;          /* Stark White institutional background */
-            --surface-color: #F8FAFC;     /* Light gray for research blocks */
-            --text-primary: #0F172A;      /* Deep slate/charcoal for reading papers */
-            --text-secondary: #475569;    /* Muted gray for metadata */
-            --accent-institutional: #0D9488; /* Deep Teal - professional but distinct color */
-            --border-color: #E2E8F0;      /* Clean, thin divider lines */
+            --bg-color: #FFFFFF;
+            --surface-color: #F8FAFC;
+            --text-primary: #0F172A;
+            --text-secondary: #475569;
+            --accent-institutional: #0D9488; /* Deep Teal */
+            --border-color: #E2E8F0;
         }
 
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
+        * { box-sizing: border-box; margin: 0; padding: 0; }
         body {
             background-color: var(--bg-color);
             color: var(--text-primary);
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
+            line-height: 1.5;
         }
 
-        .container {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 0 2rem;
-        }
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 2rem; }
 
-        /* Top Institutional Header */
-        header {
-            border-bottom: 1px solid var(--border-color);
-            padding: 1.5rem 0;
-            background: #FFF;
-        }
+        header { border-bottom: 1px solid var(--border-color); padding: 1.5rem 0; background: #FFF; }
+        .header-flex { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.2rem; font-weight: 700; letter-spacing: 0.5px; }
+        .logo span { color: var(--accent-institutional); }
+        nav a { color: var(--text-secondary); text-decoration: none; margin-left: 2rem; font-size: 0.9rem; font-weight: 500; }
+        nav a:hover { color: var(--accent-institutional); text-decoration: underline; }
 
-        .header-flex {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            font-size: 1.2rem;
-            font-weight: 700;
-            letter-spacing: 0.5px;
-            color: var(--text-primary);
-        }
-
-        .logo span {
-            color: var(--accent-institutional);
-        }
-
-        nav a {
-            color: var(--text-secondary);
-            text-decoration: none;
-            margin-left: 2rem;
-            font-size: 0.9rem;
-            font-weight: 500;
-        }
-
-        nav a:hover {
-            color: var(--accent-institutional);
-            text-decoration: underline;
-        }
-
-        /* Hero / Overview Section */
-        .hero {
-            padding: 5rem 0 3rem 0;
-            display: grid;
-            grid-template-columns: 3fr 2fr;
-            gap: 4rem;
-            align-items: start;
-        }
-
-        @media (max-width: 768px) {
-            .hero {
-                grid-template-columns: 1fr;
-                gap: 2rem;
-            }
-        }
-
-        .hero h1 {
-            font-size: 2.5rem;
-            font-weight: 700;
-            line-height: 1.2;
-            color: var(--text-primary);
-            margin-bottom: 1.5rem;
-        }
-
-        .hero p {
-            color: var(--text-secondary);
-            font-size: 1.1rem;
-            margin-bottom: 1.5rem;
-        }
-
-        /* Technical Highlight Box */
-        .tech-focus-box {
-            background: var(--surface-color);
-            border-top: 3px solid var(--accent-institutional);
-            padding: 1.5rem;
-            font-size: 0.95rem;
-        }
-
-        .tech-focus-box h3 {
-            margin-bottom: 0.5rem;
-            font-size: 1.1rem;
-            color: var(--text-primary);
-        }
-
-        /* Research Sections */
-        section {
-            padding: 4rem 0;
-            border-top: 1px solid var(--border-color);
-        }
-
-        section h2 {
-            font-size: 1.75rem;
-            font-weight: 700;
-            margin-bottom: 2rem;
-            color: var(--text-primary);
-        }
-
-        /* Capabilities List (SIFT/Kairos Style) */
-        .capabilities-list {
-            display: flex;
-            flex-direction: column;
-            gap: 2rem;
-        }
-
-        .cap-item {
-            display: grid;
-            grid-template-columns: 1fr 3fr;
-            gap: 2rem;
-        }
-
-        @media (max-width: 600px) {
-            .cap-item {
-                grid-template-columns: 1fr;
-                gap: 0.5rem;
-            }
-        }
-
-        .cap-item h3 {
-            font-size: 1.15rem;
-            color: var(--accent-institutional);
-            font-weight: 600;
-        }
-
-        .cap-item p {
-            color: var(--text-secondary);
-            font-size: 1rem;
-        }
-
-        /* Pedigree / Corporate Frame */
-        .pedigree-content {
-            max-width: 800px;
-        }
-
-        .pedigree-content p {
-            margin-bottom: 1.5rem;
-            font-size: 1.05rem;
-            color: var(--text-secondary);
-        }
-
-        /* Academic Publications Ledger */
-        .ledger {
-            display: flex;
-            flex-direction: column;
-            gap: 1.5rem;
-        }
-
-        .ledger-item {
-            padding-left: 1rem;
-            border-left: 2px solid var(--border-color);
-        }
-
-        .ledger-title {
-            font-weight: 600;
-            font-size: 1.05rem;
-            color: var(--text-primary);
-        }
-
-        .ledger-authors {
-            font-size: 0.9rem;
-            color: var(--text-secondary);
-            margin: 0.25rem 0;
-        }
-
-        .ledger-link {
-            font-size: 0.85rem;
-            color: var(--accent-institutional);
-            text-decoration: none;
-            font-weight: 500;
-        }
-
-        .ledger-link:hover {
-            text-decoration: underline;
-        }
-
-        /* Simple Contact Form */
-        .contact-flex {
+        /* Modern Split Layout */
+        .split-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 4rem;
+            padding: 4rem 0;
+            border-bottom: 1px solid var(--border-color);
         }
+        @media (max-width: 768px) { .split-grid { grid-template-columns: 1fr; gap: 2.5rem; padding: 3rem 0; } }
 
-        @media (max-width: 768px) {
-            .contact-flex {
-                grid-template-columns: 1fr;
-                gap: 2rem;
-            }
+        .left-col h1 { font-size: 2.25rem; font-weight: 700; line-height: 1.2; margin-bottom: 1.25rem; }
+        .left-col h2 { font-size: 1.5rem; font-weight: 700; margin-bottom: 1.5rem; }
+        .left-col p { color: var(--text-secondary); font-size: 1rem; margin-bottom: 1.25rem; }
+
+        .tech-focus-box {
+            background: var(--surface-color);
+            border-left: 4px solid var(--accent-institutional);
+            padding: 1.5rem;
+            font-size: 0.95rem;
         }
+        .tech-focus-box h3 { font-size: 1.05rem; margin-bottom: 0.5rem; }
 
-        form {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
+        /* Compact Research Items */
+        .bullet-list { display: flex; flex-direction: column; gap: 1.25rem; }
+        .bullet-item h3 { font-size: 1.1rem; color: var(--accent-institutional); font-weight: 600; margin-bottom: 0.25rem; }
+        .bullet-item p { color: var(--text-secondary); font-size: 0.95rem; }
+
+        /* Publications Ledger */
+        .ledger { display: flex; flex-direction: column; gap: 1.25rem; }
+        .ledger-item { padding-left: 1rem; border-left: 2px solid var(--border-color); }
+        .ledger-title { font-weight: 600; font-size: 1rem; color: var(--text-primary); }
+        .ledger-meta { font-size: 0.85rem; color: var(--text-secondary); margin: 0.15rem 0; }
+        .ledger-link { font-size: 0.85rem; color: var(--accent-institutional); text-decoration: none; font-weight: 600; }
+        .ledger-link:hover { text-decoration: underline; }
+
+        /* Clean State-Based Form Card */
+        .form-card {
+            background: var(--surface-color);
+            border: 1px solid var(--border-color);
+            padding: 2rem;
+            position: relative;
         }
-
+        form { display: flex; flex-direction: column; gap: 1rem; }
         input, textarea {
             background: #FFF;
             border: 1px solid var(--border-color);
             color: var(--text-primary);
-            padding: 0.5rem 0.75rem;
+            padding: 0.6rem 0.75rem;
             font-family: inherit;
-            font-size: 0.95rem;
+            font-size: 0.9rem;
+            width: 100%;
         }
-
+        input:focus, textarea:focus { outline: 1px solid var(--accent-institutional); }
         form button {
             background: var(--accent-institutional);
             color: #FFF;
             border: none;
-            padding: 0.6rem;
+            padding: 0.6rem 1.2rem;
             font-weight: 600;
+            font-size: 0.9rem;
             cursor: pointer;
-            width: 150px;
+            align-self: flex-start;
+            transition: opacity 0.2s;
         }
+        form button:hover { opacity: 0.9; }
 
-        footer {
-            padding: 2rem 0;
-            border-top: 1px solid var(--border-color);
-            color: var(--text-secondary);
-            font-size: 0.85rem;
-            text-align: center;
-        }
+        /* Inline success styling */
+        #form-status { display: none; margin-top: 1rem; font-size: 0.9rem; font-weight: 600; }
+        .status-success { color: #059669; }
+        .status-error { color: #DC2626; }
+
+        footer { padding: 2rem 0; color: var(--text-secondary); font-size: 0.85rem; text-align: center; }
     </style>
 </head>
 <body>
@@ -259,7 +111,7 @@
         <div class="container header-flex">
             <div class="logo">Telotrope <span>Agents</span></div>
             <nav>
-                <a href="#research">Research Areas</a>
+                <a href="#research">Research</a>
                 <a href="#pedigree">Pedigree</a>
                 <a href="#publications">Publications</a>
                 <a href="#contact">Contact</a>
@@ -269,95 +121,85 @@
 
     <main class="container">
 
-        <section class="hero">
-            <div>
-                <h1>Advanced Autonomy and Decision Support Research</h1>
-                <p>Telotrope Agents is an artificial intelligence research and development firm specializing in computational frameworks for complex, high-stakes operational environments.</p>
-                <p>We design and evaluate intelligent agents engineered for deterministic action, robust goal adaptation, and high-fidelity synthetic simulation.</p>
+        <div id="research" class="split-grid">
+            <div class="left-col">
+                <h1>Advanced Autonomy & Decision Support</h1>
+                <p>Telotrope Agents is an R&D firm specializing in computational intelligence frameworks for high-stakes operational environments.</p>
+                <p>We build action-oriented, non-conversational architectures engineered for deterministic execution, robust goal adaptation, and high-fidelity simulation.</p>
+                <div class="tech-focus-box">
+                    <h3>Operational Parameter</h3>
+                    <p>Our agent architectures operate completely outside the risk profiles of generative language models—ensuring zero hallucination risk and strict compliance with execution matrices.</p>
+                </div>
             </div>
-            
-            <div class="tech-focus-box">
-                <h3>Core Differentiator</h3>
-                <p style="color: var(--text-secondary);">Unlike conversational language models, Telotrope architectures are entirely action-oriented and non-conversational. We focus strictly on verifiable execution matrices, continuous planning, and system diagnostics where operational failure is not an option.</p>
-            </div>
-        </section>
-
-        <section id="research">
-            <h2>Research Specialties</h2>
-            <div class="capabilities-list">
-                <div class="cap-item">
+            <div class="bullet-list">
+                <div class="bullet-item">
                     <h3>Goal Reasoning & Planning</h3>
-                    <p>Architecting software mechanics that allow autonomous systems to monitor their own execution paths, diagnose external operational disruptions, and dynamically reformulate goals mid-mission.</p>
+                    <p>Enabling software agents to evaluate their own objectives, detect system/environmental discrepancies, and self-select new tracks mid-mission.</p>
                 </div>
-                <div class="cap-item">
-                    <h3>Simulation & Game AI</h3>
-                    <p>Constructing high-fidelity, rule-bound synthetic environments and adversarial reasoning engines designed for wargaming models, predictive stress-testing, and strategy validation.</p>
+                <div class="bullet-item">
+                    <h3>Simulation & Adversarial AI</h3>
+                    <p>Constructing rule-bound synthetic environments and discrete reasoning logic for combat modeling, wargaming, and strategic stress-testing.</p>
                 </div>
-                <div class="cap-item">
-                    <h3>Diagnosis & System Health</h3>
-                    <p>Developing automated diagnostic reasoning models that instantly map real-time system state anomalies, providing clear, explainable decision support windows for human commanders.</p>
+                <div class="bullet-item">
+                    <h3>System Diagnosis</h3>
+                    <p>Automated diagnostic reasoning models structured to isolate operational anomalies and yield explainable windows for human operators.</p>
                 </div>
-                <div class="cap-item">
-                    <h3>Deterministic Agents</h3>
-                    <p>Engineering robust agent behaviors outside the risk profile of generative networks, ensuring strict compliance with rule sets and predictable execution outcomes.</p>
-                </div>
-                <div class="cap-item">
+                <div class="bullet-item">
                     <h3>Individual Alignment</h3>
-                    <p>Developing algorithmic alignment techniques tailored to capture and strictly match the precise operational intent, biases, and parameters of individual human operators.</p>
+                    <p>Bespoke software logic modeled to mathematically capture and match the precise strategic intent and parameters of a distinct command structure.</p>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <section id="pedigree">
-            <h2>Proven Pedigree</h2>
-            <div class="pedigree-content">
-                <p>The foundational research and architectural methodologies driving Telotrope Agents have been developed and validated across multiple prime defense and national security R&D initiatives.</p>
-                <p>Led by CEO Matthew Molineaux, our personnel bring a deep history of delivering advanced contract-based solutions for premier defense research laboratories, contributing to the state-of-the-art in case-based reasoning, continuous planning, and autonomous systems orchestration.</p>
+        <div id="pedigree" class="split-grid">
+            <div class="left-col">
+                <h2>Proven Pedigree</h2>
+                <p>The core computational logic deployed by Telotrope Agents has been architected and stress-tested across premier national security and defense R&D frameworks.</p>
+                <p>Led by CEO Matthew Molineaux, our personnel bring a documented background delivering advanced contract-based solutions for federal labs, contributing directly to the state-of-the-art in autonomous goal management and case-based reasoning.</p>
             </div>
-        </section>
+            <div id="publications" class="ledger">
+                <h2 style="font-size: 1.25rem; margin-bottom: 0.5rem; color: var(--text-primary);">Selected Research Index</h2>
+                
+                <div class="ledger-item">
+                    <div class="ledger-title">Goal-Driven Autonomy for Responding to Unexpected Events</div>
+                    <div class="ledger-meta">M. Molineaux, M. Klenk, D. W. Aha | Strategy Simulation Analysis</div>
+                    <a href="https://apps.dtic.mil/sti/tr/pdf/ADA559963.pdf" target="_blank" class="ledger-link">Download Technical Report (PDF) ↗</a>
+                </div>
 
-        <section id="publications">
-            <h2>Selected Research Index</h2>
-            <div class="ledger">
                 <div class="ledger-item">
-                    <div class="ledger-title">Goal Reasoning in Next-Generation Autonomous Systems</div>
-                    <div class="ledger-authors">M. Molineaux, et al. | Technical Repository Ledger</div>
-                    <a href="https://scholar.google.com/scholar?q=Matthew+Molineaux+goal+reasoning" target="_blank" class="ledger-link">Google Scholar Reference ↗</a>
+                    <div class="ledger-title">Goal-based Team Crisis Intervention</div>
+                    <div class="ledger-meta">M. Molineaux, M. Cox | Advances in Cognitive Systems</div>
+                    <a href="http://www.cogsys.org/journal/volume9/article-9-5.pdf" target="_blank" class="ledger-link">Read Journal Publication (PDF) ↗</a>
                 </div>
-                <div class="ledger-item">
-                    <div class="ledger-title">Case-Based Diagnosis and Goal Formulation for Long-Duration Autonomy</div>
-                    <div class="ledger-authors">M. Molineaux, D. W. Aha | Systems Intelligence Index</div>
-                    <a href="https://scholar.google.com/scholar?q=Matthew+Molineaux+case+based+reasoning" target="_blank" class="ledger-link">Google Scholar Reference ↗</a>
-                </div>
-                <div class="ledger-item">
-                    <div class="ledger-title">Continuous Planning and Goal Execution in Dynamic Simulator Environments</div>
-                    <div class="ledger-authors">M. Molineaux | Advanced Simulation Research</div>
-                    <a href="https://scholar.google.com/scholar?q=Matthew+Molineaux+simulation" target="_blank" class="ledger-link">Google Scholar Reference ↗</a>
-                </div>
-            </div>
-        </section>
 
-        <section id="contact">
-            <div class="contact-flex">
-                <div>
-                    <h2>Corporate Intake</h2>
-                    <p style="color: var(--text-secondary); margin-top: 0.5rem;">Inquiries regarding technical briefings, capability statements, or research collaboration can be submitted securely.</p>
-                    <p style="color: var(--text-secondary); margin-top: 1.5rem; font-size: 0.9rem;">
-                        <strong>Telotrope Agents LLC</strong><br>
-                        Matthew Molineaux, CEO<br>
-                        Dayton, OH Region
-                    </p>
-                </div>
-                <div>
-                    <form onsubmit="event.preventDefault(); alert('Message logged.');">
-                        <input type="text" placeholder="Contact Name" required>
-                        <input type="email" placeholder="Organization Email (.gov / .com)" required>
-                        <textarea rows="4" placeholder="Nature of Request (Research / SBIR Collaboration / Briefing)" required></textarea>
-                        <button type="submit">Submit Request</button>
-                    </form>
+                <div class="ledger-item">
+                    <div class="ledger-title">The Case for Case-Based Transfer Learning</div>
+                    <div class="ledger-meta">M. Klenk, D. W. Aha, M. Molineaux | AAAI AI Magazine</div>
+                    <a href="https://www.researchgate.net/publication/220604949_The_Case_for_Case-Based_Transfer_Learning" target="_blank" class="ledger-link">Access via ResearchGate ↗</a>
                 </div>
             </div>
-        </section>
+        </div>
+
+        <div id="contact" class="split-grid" style="border-bottom: none;">
+            <div class="left-col">
+                <h2>Corporate Intake</h2>
+                <p>Inquiries regarding technical capability statements, SBIR teaming, or secure briefings can be routed directly to leadership.</p>
+                <p style="font-size: 0.9rem; margin-top: 2rem;">
+                    <strong>Telotrope Agents LLC</strong><br>
+                    Matthew Molineaux, CEO<br>
+                    Dayton, Ohio Region
+                </p>
+            </div>
+            <div class="form-card">
+                <form id="rt-contact-form" action="https://formspree.io/f/your_formspree_id" method="POST">
+                    <input type="text" name="name" placeholder="Authorized Contact Name" required>
+                    <input type="email" name="email" placeholder="Organization Email (.gov / .com)" required>
+                    <textarea name="message" rows="4" placeholder="Nature of Request (Research Alignment / Briefing)" required></textarea>
+                    <button type="submit" id="submit-btn">Submit Request</button>
+                </form>
+                <div id="form-status"></div>
+            </div>
+        </div>
 
     </main>
 
@@ -367,5 +209,44 @@
         </div>
     </footer>
 
+    <script>
+        const form = document.getElementById("rt-contact-form");
+        const status = document.getElementById("form-status");
+        const submitBtn = document.getElementById("submit-btn");
+
+        form.addEventListener("submit", async function(event) {
+            event.preventDefault(); // Stop standard redirect/popup behavior
+            
+            submitBtn.disabled = true;
+            submitBtn.textContent = "Transmitting...";
+            
+            const data = new FormData(event.target);
+            
+            try {
+                const response = await fetch(form.action, {
+                    method: form.method,
+                    body: data,
+                    headers: { 'Accept': 'application/json' }
+                });
+                
+                if (response.ok) {
+                    status.innerHTML = "Transmission successfully cataloged.";
+                    status.className = "status-success";
+                    status.style.display = "block";
+                    form.reset();
+                    form.style.display = "none"; // Hide form cleanly on success
+                } else {
+                    const errorData = await response.json();
+                    throw new Error(errorData.errors ? errorData.errors.map(e => e.message).join(', ') : "Transmission failed.");
+                }
+            } catch (error) {
+                status.innerHTML = "Error: Unable to transmit request. Please verify connection.";
+                status.className = "status-error";
+                status.style.display = "block";
+                submitBtn.disabled = false;
+                submitBtn.textContent = "Submit Request";
+            }
+        });
+    </script>
 </body>
 </html>
