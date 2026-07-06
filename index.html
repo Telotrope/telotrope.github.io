@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telotrope Agents | Autonomous AI Research</title>
+    <style>
+        :root {
+            --bg-color: #0B0F19;
+            --surface-color: #161D30;
+            --surface-accent: #1E2942;
+            --text-primary: #F3F4F6;
+            --text-secondary: #9CA3AF;
+            --accent-glow: #00E5FF;
+            --accent-alert: #FF3860;
+            --border-color: #2D3748;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Header */
+        header {
+            border-bottom: 1px solid var(--border-color);
+            padding: 1.5rem 0;
+            background-color: rgba(11, 15, 25, 0.8);
+            backdrop-filter: blur(8px);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.25rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .logo span {
+            color: var(--accent-glow);
+        }
+
+        nav a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            margin-left: 2rem;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--accent-glow);
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 6rem 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                grid-template-columns: 1fr;
+                padding: 4rem 0;
+                gap: 2rem;
+            }
+        }
+
+        .hero-tag {
+            color: var(--accent-glow);
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            display: inline-block;
+        }
+
+        .hero h1 {
+            font-size: 2.75rem;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+            font-weight: 800;
+        }
+
+        .hero p {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+        }
+
+        .cta-btn {
+            display: inline-block;
+            background: transparent;
+            color: var(--accent-glow);
+            border: 1px solid var(--accent-glow);
+            padding: 0.75rem 1.5rem;
+            font-size: 0.9rem;
+            font-weight: 600;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+        }
+
+        .cta-btn:hover {
+            background: rgba(0, 229, 255, 0.1);
+            box-shadow: 0 0 15px rgba(0, 229, 255, 0.2);
+        }
+
+        /* Animation Canvas Box */
+        .animation-box {
+            background: var(--surface-color);
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            height: 350px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Manifesto Callout */
+        .manifesto-box {
+            background: linear-gradient(90deg, rgba(0,229,255,0.05) 0%, rgba(11,15,25,0) 100%);
+            border-left: 3px solid var(--accent-glow);
+            padding: 2rem;
+            margin: 4rem 0;
+        }
+
+        .manifesto-box h3 {
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+        }
+
+        .manifesto-box p {
+            color: var(--text-secondary);
+        }
+
+        /* Section Layouts */
+        section {
+            padding: 5rem 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+
+        section h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 40px;
+            height: 2px;
+            background-color: var(--accent-glow);
+        }
+
+        /* Capabilities Grid */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background: var(--surface-color);
+            border: 1px solid var(--border-color);
+            padding: 2rem;
+            border-radius: 4px;
+            transition: transform 0.3s, border-color 0.3s;
+        }
+
+        .card:hover {
+            border-color: var(--accent-glow);
+            transform: translateY(-2px);
+        }
+
+        .card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+            color: #FFF;
+        }
+
+        .card p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        /* Pedigree Section */
+        .pedigree-flex {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+        }
+
+        @media (max-width: 768px) {
+            .pedigree-flex {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+
+        .pedigree-text p {
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+        }
+
+        .metric-item {
+            background: var(--surface-accent);
+            border: 1px dashed var(--border-color);
+            padding: 1.5rem;
+            border-radius: 4px;
+        }
+
+        .metric-item h4 {
+            color: var(--accent-glow);
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .metric-item p {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        /* Publications Table */
+        .pub-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .pub-item {
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 1.5rem;
+        }
+
+        .pub-item:last-child {
+            border-bottom: none;
+        }
+
+        .pub-title {
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: #FFF;
+            margin-bottom: 0.25rem;
+        }
+
+        .pub-meta {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        .pub-link {
+            color: var(--accent-glow);
+            text-decoration: none;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: inline-block;
+            margin-top: 0.5rem;
+        }
+
+        /* Contact Section */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+        }
+
+        @media (max-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        input, textarea {
+            background: var(--surface-color);
+            border: 1px solid var(--border-color);
+            color: var(--text-primary);
+            padding: 0.75rem;
+            border-radius: 4px;
+            font-family: inherit;
+        }
+
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: var(--accent-glow);
+        }
+
+        form button {
+            background: var(--accent-glow);
+            color: var(--bg-color);
+            border: none;
+            padding: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: opacity 0.3s;
+        }
+
+        form button:hover {
+            opacity: 0.9;
+        }
+
+        /* Footer */
+        footer {
+            padding: 3rem 0;
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container header-flex">
+            <div class="logo">Telotrope<span>_Agents</span></div>
+            <nav>
+                <a href="#capabilities">Capabilities</a>
+                <a href="#pedigree">Pedigree</a>
+                <a href="#publications">Publications</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        
+        <section class="hero" style="border-bottom: none;">
+            <div>
+                <span class="hero-tag">Artificial Intelligence Research</span>
+                <h1>Autonomous Agents for Complex Operational Environments.</h1>
+                <p>Telotrope Agents delivers rigorous, deterministic, non-conversational AI systems optimized for high-stakes decision-making, planning, and simulation.</p>
+                <a href="#contact" class="cta-btn">Initiate Briefing</a>
+            </div>
+            
+            <div class="animation-box">
+                <svg id="reasoning-sim" width="100%" height="100%" viewBox="0 0 400 300">
+                    <path id="main-path" d="M 50 150 L 150 150 L 250 150 L 350 150" fill="none" stroke="#2D3748" stroke-width="2" />
+                    <path id="alt-path" d="M 150 150 L 200 70 L 280 70 L 350 150" fill="none" stroke="#2D3748" stroke-width="2" stroke-dasharray="4" />
+                    
+                    <circle id="node-start" cx="50" cy="150" r="8" fill="#00E5FF" />
+                    <circle id="node-mid" cx="150" cy="150" r="8" fill="#00E5FF" />
+                    <circle id="node-disrupt" cx="250" cy="150" r="8" fill="#2D3748" />
+                    <circle id="node-alt" cx="200" cy="70" r="6" fill="#2D3748" />
+                    <circle id="node-end" cx="350" cy="150" r="8" fill="#2D3748" />
+
+                    <circle id="pulse" cx="50" cy="150" r="4" fill="#00E5FF">
+                        <animate attributeName="opacity" values="1;0.3;1" dur="1.5s" repeatCount="indefinite"/>
+                    </circle>
+
+                    <text x="50" y="180" fill="#9CA3AF" font-size="10" text-anchor="middle">Initial Goal</text>
+                    <text x="150" y="180" fill="#9CA3AF" font-size="10" text-anchor="middle">Assessment</text>
+                    <text id="label-disrupt" x="250" y="180" fill="#9CA3AF" font-size="10" text-anchor="middle">Objective</text>
+                    <text x="350" y="180" fill="#9CA3AF" font-size="10" text-anchor="middle">Success</text>
+                </svg>
+            </div>
+        </section>
+
+        <div class="manifesto-box">
+            <h3>The Non-Conversational Paradigm</h3>
+            <p>While industry trends prioritize language synthesis, Telotrope builds software that executes. We specialize in operational and algorithmic intelligence designed for contexts where failure is absolute and deterministic action is non-negotiable.</p>
+        </div>
+
+        <section id="capabilities">
+            <h2>Research Specialties</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Goal Reasoning & Planning</h3>
+                    <p>Enabling autonomous systems to evaluate their own objectives, diagnose internal or external shifts, and autonomously formulate new operational tracks in dynamic environments.</p>
+                </div>
+                <div class="card">
+                    <h3>High-Fidelity Simulation & Game AI</h3>
+                    <p>Designing sophisticated, rule-bound synthetic environments and adversarial logic systems for wargaming, stress-testing, and predictive analysis.</p>
+                </div>
+                <div class="card">
+                    <h3>System Diagnosis & Anomaly Detection</h3>
+                    <p>Mathematical structures engineered to map system states instantly, isolating discrepancies and providing verifiable decision support windows for human operators.</p>
+                </div>
+                <div class="card">
+                    <h3>Deterministic Non-Conversational Agents</h3>
+                    <p>Action-oriented agents built entirely outside the framework of large language models—removing hallucination risk and ensuring predictable execution matrices.</p>
+                </div>
+                <div class="card">
+                    <h3>Verifiable Decision Making</h3>
+                    <p>Algorithmic architectures structured to yield highly transparent operational outputs, avoiding "black box" logic loops in high-stakes environments.</p>
+                </div>
+                <div class="card">
+                    <h3>Individual Alignment</h3>
+                    <p>Bespoke software logic modeled to match the specific intent, bias profiles, and operational parameters of individual operators or distinct strategic commands.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="pedigree">
+            <h2>Proven Pedigree</h2>
+            <div class="pedigree-flex">
+                <div class="pedigree-text">
+                    <p>The core computational research deployed by Telotrope Agents has been architected, validated, and stress-tested across critical national security and government R&D environments.</p>
+                    <p>Led by CEO Matthew Molineaux, our team brings decades of experience executing contract-based artificial intelligence solutions for premier agencies, driving innovations in case-based reasoning, adaptive planning, and autonomous systems framework design.</p>
+                </div>
+                <div class="metrics-grid">
+                    <div class="metric-item">
+                        <h4>Mission-Critical Autonomy</h4>
+                        <p>Foundational goal-reasoning logic structured for multi-agent asset orchestration and asset protection modeling.</p>
+                    </div>
+                    <div class="metric-item">
+                        <h4>Secure R&D Standards</h4>
+                        <p>Built upon strict, provable software design principles tailored to align seamlessly with federal framework compliance and defense requirements.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="publications">
+            <h2>Selected Research Index</h2>
+            <div class="pub-list">
+                <div class="pub-item">
+                    <div class="pub-title">Goal Reasoning in Next-Generation Autonomous Systems</div>
+                    <div class="pub-meta">M. Molineaux, et al. | Key Foundational Research Matrix</div>
+                    <a href="https://scholar.google.com/scholar?q=Matthew+Molineaux+goal+reasoning" target="_blank" class="pub-link">[ View via Scholar ]</a>
+                </div>
+                <div class="pub-item">
+                    <div class="pub-title">Case-Based Diagnosis and Goal Formulation for Long-Duration Autonomy</div>
+                    <div class="pub-meta">M. Molineaux, D. W. Aha | Defense-Oriented AI Applications</div>
+                    <a href="https://scholar.google.com/scholar?q=Matthew+Molineaux+case+based+reasoning" target="_blank" class="pub-link">[ View via Scholar ]</a>
+                </div>
+                <div class="pub-item">
+                    <div class="pub-title">Continuous Planning and Goal Execution in Dynamic Simulator Environments</div>
+                    <div class="pub-meta">M. Molineaux | Simulation & Adversarial Logic Index</div>
+                    <a href="https://scholar.google.com/scholar?q=Matthew+Molineaux+simulation" target="_blank" class="pub-link">[ View via Scholar ]</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" style="border-bottom: none;">
+            <div class="contact-grid">
+                <div>
+                    <h2>Secure Intake</h2>
+                    <p style="color: var(--text-secondary); margin-top: 1rem;">Contact Telotrope Agents for capability statements, technical deep-dives, or secure contract inquiries.</p>
+                    <p style="color: var(--text-secondary); margin-top: 1rem; font-size: 0.9rem;">Corporate Entity: <strong>Telotrope Agents LLC</strong><br>Principal Investigator: <strong>Matthew Molineaux, CEO</strong></p>
+                </div>
+                <div>
+                    <form onsubmit="event.preventDefault(); alert('Transmission simulated successfully.');">
+                        <input type="text" placeholder="Authorized Contact Name" required>
+                        <input type="email" placeholder="Organization Email (.gov / .com)" required>
+                        <textarea rows="5" placeholder="Operational or Research Request Details" required></textarea>
+                        <button type="submit">Transmit Request</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            &copy; 2026 Telotrope Agents. All rights reserved. // Computational Sovereignty Through Goal Reasoning.
+        </div>
+    </footer>
+
+    <script>
+        const pulse = document.getElementById('pulse');
+        const nodeMid = document.getElementById('node-mid');
+        const nodeDisrupt = document.getElementById('node-disrupt');
+        const nodeAlt = document.getElementById('node-alt');
+        const nodeEnd = document.getElementById('node-end');
+        const labelDisrupt = document.getElementById('label-disrupt');
+        const mainPath = document.getElementById('main-path');
+        const altPath = document.getElementById('alt-path');
+
+        let step = 0;
+
+        function runSimulationLoop() {
+            // Reset state
+            if (step === 0) {
+                pulse.setAttribute('cx', '50');
+                pulse.setAttribute('cy', '150');
+                nodeMid.setAttribute('fill', '#00E5FF');
+                nodeDisrupt.setAttribute('fill', '#2D3748');
+                nodeAlt.setAttribute('fill', '#2D3748');
+                nodeEnd.setAttribute('fill', '#2D3748');
+                mainPath.setAttribute('stroke', '#2D3748');
+                altPath.setAttribute('stroke', '#2D3748');
+                labelDisrupt.textContent = "Objective";
+                labelDisrupt.setAttribute('fill', '#9CA3AF');
+                
+                // Move to check point
+                setTimeout(() => {
+                    animateValue(pulse, 'cx', 50, 150, 1000, () => {
+                        step = 1;
+                        runSimulationLoop();
+                    });
+                }, 500);
+            } 
+            // Anomaly detected / Disrupt state
+            else if (step === 1) {
+                nodeDisrupt.setAttribute('fill', varColor('--accent-alert'));
+                labelDisrupt.textContent = "Disruption Detected";
+                labelDisrupt.setAttribute('fill', varColor('--accent-alert'));
+                mainPath.setAttribute('stroke', varColor('--accent-alert'));
+                
+                // Trigger Goal Reasoning / Alternate Plan computation
+                setTimeout(() => {
+                    nodeAlt.setAttribute('fill', varColor('--accent-glow'));
+                    altPath.setAttribute('stroke', varColor('--accent-glow'));
+                    
+                    // Route along alternate track
+                    animateValueXY(pulse, 150, 150, 200, 70, 800, () => {
+                        animateValueXY(pulse, 200, 70, 350, 150, 1000, () => {
+                            nodeEnd.setAttribute('fill', varColor('--accent-glow'));
+                            step = 0;
+                            setTimeout(runSimulationLoop, 2000); // Wait before cycling
+                        });
+                    });
+                }, 1000);
+            }
+        }
+
+        // Helper function helpers to read CSS variables in JS
+        function varColor(name) {
+            return getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+        }
+
+        // JS Animators for linear SVG transitions
+        function animateValue(obj, attr, start, end, duration, callback) {
+            let startTimestamp = null;
+            const step = (timestamp) => {
+                if (!startTimestamp) startTimestamp = timestamp;
+                const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+                obj.setAttribute(attr, start + progress * (end - start));
+                if (progress < 1) {
+                    window.requestAnimationFrame(step);
+                } else if (callback) {
+                    callback();
+                }
+            };
+            window.requestAnimationFrame(step);
+        }
+
+        function animateValueXY(obj, startX, startY, endX, endY, duration, callback) {
+            let startTimestamp = null;
+            const step = (timestamp) => {
+                if (!startTimestamp) startTimestamp = timestamp;
+                const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+                obj.setAttribute('cx', startX + progress * (endX - startX));
+                obj.setAttribute('cy', startY + progress * (endY - startY));
+                if (progress < 1) {
+                    window.requestAnimationFrame(step);
+                } else if (callback) {
+                    callback();
+                }
+            };
+            window.requestAnimationFrame(step);
+        }
+
+        // Initialize script execution loop
+        window.onload = () => {
+            runSimulationLoop();
+        };
+    </script>
+</body>
+</html>
