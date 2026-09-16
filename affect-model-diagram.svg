@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   class="deepdive-svg"
+   viewBox="360 95 345 210"
+   font-family="system-ui, -apple-system, 'Segoe UI', sans-serif"
+   version="1.1"
+   id="svg44"
+   sodipodi:docname="goal_diagram_OL_20260831.svg"
+   inkscape:export-filename="frustated_engaed_emo_integ"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   inkscape:version="1.4.4 (dcaf3e7, 2026-05-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg" xmlns:c2pa="http://c2pa.org/manifest"><metadata><c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTo3NjY2YjM3Zi1mNTE4LTQ2Y2ItOGYyYS1kZjZkNDhhMGY5NWEAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaDzfs8SIkUC3sMrVVm72V0EAAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDpiOTUzYTgwMS0xM2ZjLTQ5NGQtYmNlMC00YzhmMjRjMWUxMjdscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNoG8uhTYR7TlIHK1o4s8g3TQAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFggegKrUMyad0mSBx5bEBWzhYBUBDOSErTbnd+lXxeLbpakZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaJTgOmblwfgRhMFvyQj7slgAAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRMAAAAAAAAAAAAAAAAZGhhc2hYINFV72Z1wXUzSjTWRU6Zf2xRTtIUHhYCWiQMIvwubyvcZG5hbWVuanVtYmYgbWFuaWZlc3RqZXhjbHVzaW9uc4GiZXN0YXJ0GQK/Zmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOjc2NjZiMzdmLWY1MTgtNDZjYi04ZjJhLWRmNmQ0OGEwZjk1YS9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOjZiMzRhN2ZjLTMwNzgtNDM1Mi1hYmY1LWIyZGNjY2VjYTBhZnJjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCB6AqtQzJp3SZIHHlsQFbOFgFQEM5IStNud36VfF4tulqJjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFgg08MIsN5QwCyXp9oDvkdW7vOWmfTdO/YhR+j6dEMSpQuiY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFggbfv48Pgrr3k4Aas5iXnuUM+2TmazZg6IC7ZN5/RmvIl0Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQNDskc8WJE8CXrgu8Smr7V0kCzPperLBv0U+wmQuTm8ZrkeQINj7rCqkgLBfpqGuRHvrJLDnR5gfpIv28tSLQnI=</c2pa:manifest></metadata>
+  <sodipodi:namedview
+     id="namedview44"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="497.44962"
+     inkscape:cy="239.35565"
+     inkscape:window-width="2048"
+     inkscape:window-height="1209"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg44" />
+  <defs
+     id="defs1">
+    <style
+       id="style1">
+      .ink        { fill: #2e2a25; }
+      .ink-soft   { fill: #6b6259; }
+      .muted      { fill: #a89f92; }
+      .accent     { fill: #c98b4b; }
+      .accent-dk  { fill: #a8703a; }
+      .annotate   { fill: #b8794a; }
+      .line       { stroke: #cbbeaf; }
+      .tick-dark  { stroke: #3a342c; }
+      .ref-dot    { fill: #93897b; }
+      .ref-label  { fill: #93897b; }
+    </style>
+  </defs>
+  <!-- ===================== LEFT COLUMN ===================== -->
+  <!-- rank stack -->
+  <!-- Pattern of life -->
+  <rect
+     x="118"
+     y="114"
+     width="165"
+     height="40"
+     rx="20"
+     fill="#ffffff"
+     class="line"
+     stroke-width="1.3"
+     id="rect6"
+     inkscape:export-filename="goal_info.png"
+     inkscape:export-xdpi="300"
+     inkscape:export-ydpi="300" />
+  <text
+     x="200.5"
+     y="138.5"
+     text-anchor="middle"
+     class="ink"
+     font-size="13px"
+     id="text6"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial;font-size:14.66666667px">Pattern of life</text>
+  <!-- connector to Track V1 -->
+  <line
+     x1="200.5"
+     y1="154"
+     x2="200.5"
+     y2="219"
+     class="line"
+     stroke-width="1.3"
+     id="line7" />
+  <!-- Track V1 card -->
+  <rect
+     x="87.5"
+     y="186.5"
+     width="226"
+     height="58.334961"
+     rx="14"
+     fill="#f2e2d2"
+     stroke="#8b4a1d"
+     stroke-width="1.7"
+     stroke-dasharray="5,4"
+     id="rect8"
+     style="stroke-dasharray:none" />
+  <text
+     x="200.5"
+     y="223.5"
+     text-anchor="middle"
+     class="ink"
+     font-size="19px"
+     font-weight="600"
+     id="text9"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Arial Rounded MT Bold';-inkscape-font-specification:'Arial Rounded MT Bold, '">Track V1</text>
+  <!-- connectors down to children -->
+  <line
+     x1="201"
+     y1="245"
+     x2="136"
+     y2="309"
+     class="line"
+     stroke-width="1.3"
+     id="line10" />
+  <line
+     x1="201"
+     y1="245"
+     x2="280"
+     y2="309"
+     class="line"
+     stroke-width="1.3"
+     id="line11" />
+  <rect
+     x="71"
+     y="283"
+     width="130"
+     height="38"
+     rx="19"
+     fill="#ffffff"
+     class="line"
+     stroke-width="1.3"
+     id="rect11" />
+  <text
+     x="136"
+     y="306.5"
+     text-anchor="middle"
+     class="ink"
+     font-size="13px"
+     id="text11"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial;font-size:14.66666667px">sensor lock</text>
+  <rect
+     x="215"
+     y="283"
+     width="130"
+     height="38"
+     rx="19"
+     fill="#ffffff"
+     class="line"
+     stroke-width="1.3"
+     id="rect12" />
+  <text
+     x="280"
+     y="306.5"
+     text-anchor="middle"
+     class="ink"
+     font-size="13px"
+     id="text12"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial;font-size:14.66666667px">log stops</text>
+  <!-- ===================== RIGHT COLUMN ===================== -->
+  
+  <text
+     x="366.49869"
+     y="325.58987"
+     class="muted"
+     font-size="11px"
+     id="text14-21"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.6667px;font-family:'Arial Rounded MT Bold';-inkscape-font-specification:'Arial Rounded MT Bold, ';fill:#905328;fill-opacity:1"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.6667px;font-family:'Arial Rounded MT Bold';-inkscape-font-specification:'Arial Rounded MT Bold, '"
+       id="tspan1-6">Focus over Time</tspan></text>
+  <text
+     x="134.67967"
+     y="363.89349"
+     class="muted"
+     font-size="11px"
+     id="text14-2"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.6667px;font-family:'Arial Rounded MT Bold';-inkscape-font-specification:'Arial Rounded MT Bold, ';fill:#905328;fill-opacity:1"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.6667px;font-family:'Arial Rounded MT Bold';-inkscape-font-specification:'Arial Rounded MT Bold, '"
+       id="tspan1-7">Priority</tspan></text>
+  <text
+     x="98.498703"
+     y="101.34636"
+     class="muted"
+     font-size="11px"
+     id="text14-4"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.6667px;font-family:'Arial Rounded MT Bold';-inkscape-font-specification:'Arial Rounded MT Bold, ';fill:#905328;fill-opacity:1"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.6667px;font-family:'Arial Rounded MT Bold';-inkscape-font-specification:'Arial Rounded MT Bold, '"
+       id="tspan1-2">Motivational Hierarchy</tspan></text>
+  <text
+     x="607.54218"
+     y="221.13506"
+     class="muted"
+     font-size="11px"
+     id="text14-1"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.6667px;font-family:Arial;-inkscape-font-specification:Arial;fill:#905328;fill-opacity:1">Pleasant</text>
+  <text
+     x="480.62833"
+     y="292.59634"
+     class="muted"
+     font-size="11px"
+     id="text14-1-82"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.6667px;font-family:Arial;-inkscape-font-specification:Arial;fill:#905328;fill-opacity:1">Low Arousal</text>
+  <text
+     x="482.54895"
+     y="125.86265"
+     class="muted"
+     font-size="11px"
+     id="text14-1-82-5"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.6667px;font-family:Arial;-inkscape-font-specification:Arial;fill:#905328;fill-opacity:1">High Arousal</text>
+  <text
+     x="373.3577"
+     y="218.39221"
+     class="muted"
+     font-size="11px"
+     id="text14-1-8"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.6667px;font-family:Arial;-inkscape-font-specification:Arial;fill:#905328;fill-opacity:1">Unpleasant</text>
+  <!-- valence / arousal quadrant: engaged & frustrated are the primary marks, -->
+  <!-- five reference emotions sit muted in the background for context -->
+  <!-- axes -->
+  <line
+     x1="520"
+     y1="130"
+     x2="520"
+     y2="276"
+     class="line"
+     stroke-width="1.2"
+     id="line14"
+     style="stroke:#998163;stroke-opacity:1" />
+  <line
+     x1="388"
+     y1="203"
+     x2="652"
+     y2="203"
+     class="line"
+     stroke-width="1.2"
+     id="line15"
+     style="stroke:#998163;stroke-opacity:1" />
+  <!-- reference emotions (muted, background) -->
+  <circle
+     cx="630.5"
+     cy="165"
+     r="2.3"
+     class="ref-dot"
+     id="circle15"
+     style="opacity:0.55;fill:#1b1915;fill-opacity:1" />
+  <text
+     x="616.97107"
+     y="155.90105"
+     text-anchor="start"
+     class="ref-label"
+     font-size="7.5"
+     id="text15"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.3333px;font-family:Arial;-inkscape-font-specification:Arial;opacity:0.55;fill:#1b1915;fill-opacity:1">happiness</text>
+  <circle
+     cx="526.5"
+     cy="142.64999"
+     r="2.3"
+     class="ref-dot"
+     id="circle16"
+     style="opacity:0.55;fill:#1b1915;fill-opacity:1" />
+  <text
+     x="557.34253"
+     y="146.76888"
+     text-anchor="middle"
+     class="ref-label"
+     font-size="7.5"
+     id="text16"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.3333px;font-family:Arial;-inkscape-font-specification:Arial;opacity:0.55;fill:#1b1915;fill-opacity:1">surprise</text>
+  <circle
+     cx="409.5"
+     cy="146.2"
+     r="2.3"
+     class="ref-dot"
+     id="circle17"
+     style="opacity:0.55;fill:#1b1915;fill-opacity:1" />
+  <text
+     x="407.20001"
+     y="143.89999"
+     text-anchor="end"
+     class="ref-label"
+     font-size="7.5"
+     id="text17"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.3333px;font-family:Arial;-inkscape-font-specification:Arial;opacity:0.55;fill:#1b1915;fill-opacity:1">fear</text>
+  <circle
+     cx="403"
+     cy="163.95"
+     r="2.3"
+     class="ref-dot"
+     id="circle18"
+     style="opacity:0.55;fill:#1b1915;fill-opacity:1" />
+  <text
+     x="410.79822"
+     y="177.8996"
+     text-anchor="end"
+     class="ref-label"
+     font-size="7.5"
+     id="text18"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.3333px;font-family:Arial;-inkscape-font-specification:Arial;opacity:0.55;fill:#1b1915;fill-opacity:1">anger</text>
+  <circle
+     cx="448.5"
+     cy="252.7"
+     r="2.3"
+     class="ref-dot"
+     id="circle19"
+     style="opacity:0.55;fill:#1b1915;fill-opacity:1" />
+  <text
+     x="448.5"
+     y="268"
+     text-anchor="middle"
+     class="ref-label"
+     font-size="7.5"
+     id="text19"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.3333px;font-family:Arial;-inkscape-font-specification:Arial;opacity:0.55;fill:#1b1915;fill-opacity:1">sadness</text>
+  <!-- frustrated: negative valence, high & rising arousal -->
+  <circle
+     cx="461.5"
+     cy="160.4"
+     r="10"
+     fill="#ffffff"
+     id="circle20" />
+  <circle
+     cx="461.5"
+     cy="160.4"
+     r="6.5"
+     class="accent-dk"
+     id="circle21" />
+  <text
+     x="501.39697"
+     y="181.80469"
+     text-anchor="end"
+     class="accent-dk"
+     font-size="13.5px"
+     font-weight="700"
+     id="text21"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:'Arial Rounded MT Bold';-inkscape-font-specification:'Arial Rounded MT Bold, '"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Arial Rounded MT Bold';-inkscape-font-specification:'Arial Rounded MT Bold, '"
+       id="tspan2">frustration</tspan></text>
+  <!-- little thermometer, rising -->
+  <text
+     x="456.43549"
+     y="195.30052"
+     text-anchor="middle"
+     class="annotate"
+     font-size="8.5px"
+     id="text23"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.3333px;font-family:Arial;-inkscape-font-specification:Arial">↑ rising</text>
+  <text
+     x="582.94794"
+     y="197.38982"
+     text-anchor="middle"
+     class="annotate"
+     font-size="8.5px"
+     id="text23-1"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.3333px;font-family:Arial;-inkscape-font-specification:Arial;fill:#b8794a">↓ falling</text>
+  <!-- engaged: positive valence, high arousal -->
+  <circle
+     cx="585"
+     cy="163.95"
+     r="10"
+     fill="#ffffff"
+     id="circle24" />
+  <circle
+     cx="585"
+     cy="163.95"
+     r="6.5"
+     class="accent"
+     id="circle25" />
+  <text
+     x="536.92334"
+     y="182.82422"
+     text-anchor="start"
+     class="accent"
+     font-size="13.5px"
+     font-weight="700"
+     id="text25"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:'Arial Rounded MT Bold';-inkscape-font-specification:'Arial Rounded MT Bold, '">engagement</text>
+  <!-- little thermometer, high & steady -->
+  <!-- timeline -->
+  <line
+     x1="389.89294"
+     y1="373.9234"
+     x2="682.67078"
+     y2="373.9234"
+     class="line"
+     stroke-width="1.2"
+     id="line27" />
+  <!-- held segment -->
+  <rect
+     x="389.89294"
+     y="366.9234"
+     width="75"
+     height="14"
+     rx="7"
+     fill="#c98b4b"
+     id="rect27" />
+  <!-- worked segment -->
+  <rect
+     x="619.89294"
+     y="366.9234"
+     width="62.777832"
+     height="14"
+     rx="3.5155587"
+     fill="#c98b4b"
+     id="rect32"
+     style="stroke-width:1" />
+  <!-- now marker -->
+  <!-- projected / re-slew -->
+  <!-- divider -->
+  <rect
+     x="270.21115"
+     y="207.16063"
+     width="25.000999"
+     height="17.5"
+     rx="8.5230703"
+     fill="#cbbba8"
+     id="rect12-7"
+     style="fill:#8a4b1f;fill-opacity:1;stroke-width:1" />
+  <text
+     x="282.51114"
+     y="219.44482"
+     font-size="8.5px"
+     fill="#ffffff"
+     text-anchor="middle"
+     id="text13"
+     style="font-size:14.6667px">p2</text>
+  <rect
+     x="216.07852"
+     y="350.41299"
+     width="25.000999"
+     height="17.5"
+     rx="8.5230703"
+     fill="#cbbba8"
+     id="rect12-7-8"
+     style="fill:#8a4b1f;fill-opacity:1;stroke-width:1" />
+  <text
+     x="228.37851"
+     y="362.69717"
+     font-size="8.5px"
+     fill="#ffffff"
+     text-anchor="middle"
+     id="text13-9"
+     style="font-size:14.6667px">p#</text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.6667px;font-family:'Arial Rounded MT Bold';-inkscape-font-specification:'Arial Rounded MT Bold, ';writing-mode:lr-tb;direction:ltr;fill:#905328;fill-opacity:1;stroke:#998163;stroke-width:1.3;stroke-dasharray:none;stroke-opacity:1"
+     x="300.85193"
+     y="403.05087"
+     id="text7"><tspan
+       sodipodi:role="line"
+       id="tspan7"></tspan></text>
+  <line
+     x1="381.64984"
+     y1="357.08615"
+     x2="683.39978"
+     y2="357.08615"
+     stroke="#d8cbbc"
+     stroke-width="0.999998"
+     id="line1"
+     style="stroke:#8a4b1f;stroke-width:1.5;stroke-dasharray:none;stroke-opacity:1" />
+  <line
+     x1="381.64984"
+     y1="353.08615"
+     x2="381.64984"
+     y2="361.08615"
+     id="line4"
+     style="stroke:#8a4b1f;stroke-width:1.5;stroke-dasharray:none;stroke-opacity:1" />
+  <line
+     x1="532.05634"
+     y1="353.08615"
+     x2="532.05634"
+     y2="361.08615"
+     id="line5"
+     style="stroke:#8a4b1f;stroke-width:1.5;stroke-dasharray:none;stroke-opacity:1" />
+  <line
+     x1="683.42078"
+     y1="353.08615"
+     x2="683.42078"
+     y2="361.08615"
+     id="line6"
+     style="stroke:#8a4b1f;stroke-width:1.5;stroke-dasharray:none;stroke-opacity:1" />
+  <text
+     x="382.39984"
+     y="347.08615"
+     font-size="9.5"
+     fill="#9a9a9a"
+     text-anchor="middle"
+     id="text8"
+     style="font-size:13.3333px;fill:#0c0c0c;fill-opacity:1">0:30</text>
+  <text
+     x="533.39978"
+     y="347.08615"
+     font-size="9.5"
+     fill="#9a9a9a"
+     text-anchor="middle"
+     id="text9-5"
+     style="font-size:13.3333px;fill:#0c0c0c;fill-opacity:1">0:45</text>
+  <text
+     x="683.39978"
+     y="347.08615"
+     font-size="9.5"
+     fill="#9a9a9a"
+     text-anchor="middle"
+     id="text10"
+     style="font-size:13.3333px;fill:#0c0c0c;fill-opacity:1"
+     inkscape:export-filename="goal_info.png"
+     inkscape:export-xdpi="300"
+     inkscape:export-ydpi="300">1:00</text>
+</svg>

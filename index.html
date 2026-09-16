@@ -1,252 +1,468 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Telotrope Agents | AI Research & Development</title>
-    <style>
-        :root {
-            --bg-color: #FFFFFF;
-            --surface-color: #F8FAFC;
-            --text-primary: #0F172A;
-            --text-secondary: #475569;
-            --accent-institutional: #0D9488; /* Deep Teal */
-            --border-color: #E2E8F0;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Telotrope Agents | Alignment &amp; Controllability for Autonomous Systems</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,700&family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bronze:#AB8544;
+    --rust:#814E28;
+    --amber:#C8922A;
+    --ink:#1A1A1A;
+    --dark:#1C1B19;
+    --gray:#6B6660;
+    --tint:#F4EEE3;
+    --white:#FFFFFF;
+    --mx: clamp(20px, 6vw, 0.7in);
+    --mx-mark: clamp(16px, 5vw, 0.6in);
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    font-family:'Open Sans', sans-serif;
+    color:var(--ink);
+    background:var(--white);
+    line-height:1.5;
+  }
+  a{color:inherit;}
 
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-        body {
-            background-color: var(--bg-color);
-            color: var(--text-primary);
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.5;
-        }
+  /* ---- Header ---- */
+  header{
+    position:sticky; top:0; z-index:20;
+    background:rgba(255,255,255,0.92);
+    backdrop-filter:blur(6px);
+    border-bottom:1px solid #eee;
+  }
+  .header-inner{
+    max-width:1180px;margin:0 auto;
+    padding:16px var(--mx);
+    display:flex; align-items:center; justify-content:space-between;
+  }
+  .wordmark-svg{ height:20px; width:auto; display:block; }
+  nav{display:flex; gap:28px; align-items:center; font-size:14px;}
+  nav a{text-decoration:none;color:var(--ink);}
+  .nav-cta{
+    border:1px solid var(--bronze); color:var(--bronze);
+    padding:8px 16px; border-radius:4px; font-weight:400;
+  }
 
-        .container { max-width: 1100px; margin: 0 auto; padding: 0 2rem; }
+  /* ---- HERO ----
+     Single full-width text column. The dense field is a quiet corner
+     accent tucked behind the headline, not a competing visual block. */
+  .hero{
+    position:relative;
+    max-width:1180px; margin:0 auto;
+    padding: 76px var(--mx) 64px var(--mx);
+    overflow:hidden;
+  }
+  .hero-field-accent{
+    position:absolute;
+    top:0; right:0;
+    width:360px; height:360px;
+    pointer-events:none;
+    z-index:0;
+    overflow:hidden;
+  }
+  @media (max-width:1050px){ .hero-field-accent{ width:220px; height:220px; } }
+  @media (max-width:800px){ .hero-field-accent{ width:150px; height:150px; } }
+  @media (max-width:560px){ .hero-field-accent{ display:none; } }
+  .hero-field-accent svg, .hero-field-accent img{ display:block; width:100%; height:100%; }
+  .hero-content{ position:relative; z-index:1; max-width:640px; }
+  @media (max-width:1050px){ .hero-content{ padding-right:220px; } }
+  @media (max-width:800px){ .hero-content{ padding-right:150px; } }
+  @media (max-width:560px){ .hero-content{ padding-right:0; } }
+  .hero h1{
+    font-family:'Poppins',sans-serif; font-weight:700; font-size:clamp(28px,4vw,42px);
+    line-height:1.14; margin:0 0 20px 0;
+  }
+  .hero .subtitle{
+    font-style:italic; font-weight:400; font-size:17px;
+    line-height:1.55; max-width:520px; margin:0 0 28px 0; color:var(--ink);
+  }
+  .cta-row{display:flex; gap:14px; flex-wrap:wrap; margin-bottom:26px;}
+  .btn-primary{
+    background:var(--bronze); color:var(--white); border:none;
+    padding:12px 22px; border-radius:4px; font-size:14px; font-weight:700;
+    font-family:'Poppins',sans-serif; cursor:pointer;
+    display:inline-block; text-decoration:none;
+  }
+  .btn-secondary{
+    background:transparent; color:var(--ink); border:1px solid #ccc;
+    padding:12px 22px; border-radius:4px; font-size:14px; cursor:pointer;
+    display:inline-block; text-decoration:none;
+  }
+  .hero-rule{width:52px;height:0.75pt;background:var(--amber);border:none;margin:0 0 12px 0;}
+  .hero-meta{font-size:13px;color:var(--amber);}
 
-        header { border-bottom: 1px solid var(--border-color); padding: 1.5rem 0; background: #FFF; }
-        .header-flex { display: flex; justify-content: space-between; align-items: center; }
-        .logo { font-size: 1.2rem; font-weight: 700; letter-spacing: 0.5px; }
-        .logo span { color: var(--accent-institutional); }
-        nav a { color: var(--text-secondary); text-decoration: none; margin-left: 2rem; font-size: 0.9rem; font-weight: 500; }
-        nav a:hover { color: var(--accent-institutional); text-decoration: underline; }
+  /* ---- Generic section ---- */
+  section{position:relative;}
+  .section-pad{padding:76px var(--mx);}
+  .section-pad.tight{padding:56px var(--mx);}
+  .field-strip{ position:relative; width:100%; height:44px; margin-bottom:8px; overflow:hidden; }
+  .field-strip-svg{ width:100%; height:100%; display:block; }
+  .section-title{
+    font-family:'Poppins',sans-serif; font-weight:700; font-size:25px; margin:0 0 10px 0;
+    max-width:1180px; margin-left:auto; margin-right:auto;
+  }
+  .section-intro{
+    color:var(--ink); font-size:15px; line-height:1.65;
+    max-width:620px; margin: 0 auto 40px auto;
+  }
 
-        /* Modern Split Layout */
-        .split-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 4rem;
-            padding: 4rem 0;
-            border-bottom: 1px solid var(--border-color);
-        }
-        @media (max-width: 768px) { .split-grid { grid-template-columns: 1fr; gap: 2.5rem; padding: 3rem 0; } }
+  /* ---- Problem narrative (two-col) ---- */
+  .problem{
+    display:grid; grid-template-columns: 1fr 1fr; gap:56px; align-items:start;
+    max-width:1180px; margin:0 auto;
+  }
+  @media (max-width:820px){ .problem{grid-template-columns:1fr;} }
+  .problem p{font-size:15px; line-height:1.7; margin:0 0 16px 0;}
+  .problem .comic-figure{
+    display:flex; align-items:start; justify-content:center;
+  }
+  .problem .comic-figure img{
+    width:100%; max-width:240px; height:auto; display:block; border-radius:6px;
+  }
+  @media (max-width:820px){ .problem .comic-figure img{ max-width:300px; margin:0 auto; } }
 
-        .left-col h1 { font-size: 2.25rem; font-weight: 700; line-height: 1.2; margin-bottom: 1.25rem; }
-        .left-col h2 { font-size: 1.5rem; font-weight: 700; margin-bottom: 1.5rem; }
-        .left-col p { color: var(--text-secondary); font-size: 1rem; margin-bottom: 1.25rem; }
+  /* ---- Capability grid ---- */
+  .deepdive{
+    max-width:700px; margin:40px auto 0 auto;
+  }
+  .deepdive-figure{ border:1px solid #e6ded0; border-radius:6px; padding:24px; background:var(--white); }
+  .deepdive-svg{ width:100%; height:auto; display:block; }
+  .cap-grid{
+    display:flex; flex-direction:column; gap:24px;
+    max-width:1180px; margin:0 auto;
+  }
+  .cap-row{ display:flex; gap:24px; align-items:center; flex-wrap:wrap; }
+  .cap-card{
+    border-radius:6px; padding:26px 22px;
+    background:var(--white);
+    flex:1 1 260px; min-width:200px; flex-shrink:1;
+  }
+  .cap-card .mark{ width:26px; height:26px; margin-bottom:16px; }
+  .cap-card h3{font-family:'Poppins',sans-serif; font-weight:700; font-size:17px; margin:0 0 4px 0;}
+  .cap-card .role{font-style:italic; color:var(--rust); font-size:13.5px; margin:0 0 12px 0;}
+  .cap-card p{font-size:14px; line-height:1.6; margin:0; color:var(--ink);}
+  /* Images resist shrinking (low flex-shrink, high min-width) so cards give up space first */
+  .cap-figure{
+    border-radius:6px; padding:4px 6px;
+    background:var(--white);
+    flex:2 0.3 380px; min-width:380px;
+  }
+  .cap-figure svg, .cap-figure img{ width:100%; height:auto; display:block; }
 
-        .tech-focus-box {
-            background: var(--surface-color);
-            border-left: 4px solid var(--accent-institutional);
-            padding: 1.5rem;
-            font-size: 0.95rem;
-        }
-        .tech-focus-box h3 { font-size: 1.05rem; margin-bottom: 0.5rem; }
+  /* ---- Values (list format) ---- */
+  .apps{
+    display:grid; grid-template-columns:repeat(2,1fr); gap:28px 40px;
+    max-width:1180px; margin:0 auto;
+  }
+  @media (max-width:700px){ .apps{grid-template-columns:1fr;} }
+  .app-item{display:flex; gap:14px; align-items:flex-start;}
+  .app-item .dot{width:8px;height:8px;border-radius:50%;background:var(--bronze); margin-top:7px; flex:none;}
+  .app-item .icon-mark{ width:22px; height:22px; margin-top:2px; flex:none; }
+  .app-item h4{margin:0 0 2px 0; font-size:15px; font-weight:700; font-family:'Poppins',sans-serif;}
+  .app-item .role{font-style:italic; color:var(--rust); font-size:13px; margin:0 0 6px 0;}
+  .app-item p{margin:0; font-size:13.5px; color:var(--gray); line-height:1.55;}
 
-        /* Compact Research Items */
-        .bullet-list { display: flex; flex-direction: column; gap: 1.25rem; }
-        .bullet-item h3 { font-size: 1.1rem; color: var(--accent-institutional); font-weight: 600; margin-bottom: 0.25rem; }
-        .bullet-item p { color: var(--text-secondary); font-size: 0.95rem; }
+  /* ---- Pedigree ---- */
+  .pedigree-wrap{background:var(--tint);}
+  .pedigree-inner{
+    max-width:1180px; margin:0 auto; display:grid;
+    grid-template-columns: 220px 1fr; gap:40px; align-items:center;
+  }
+  @media (max-width:700px){ .pedigree-inner{grid-template-columns:1fr;} }
+  .avatar{
+    width:150px; height:150px; border-radius:50%;
+    background:var(--white); border:1px solid var(--bronze);
+    overflow:hidden;
+  }
+  .avatar img{ width:100%; height:100%; object-fit:cover; display:block; }
+  .pedigree-inner .lead{font-weight:700; font-size:17px; margin:0 0 10px 0;}
+  .pedigree-inner p{font-size:14.5px; line-height:1.7; margin:0;}
 
-        /* Publications Ledger */
-        .ledger { display: flex; flex-direction: column; gap: 1.25rem; }
-        .ledger-item { padding-left: 1rem; border-left: 2px solid var(--border-color); }
-        .ledger-title { font-weight: 600; font-size: 1rem; color: var(--text-primary); }
-        .ledger-meta { font-size: 0.85rem; color: var(--text-secondary); margin: 0.15rem 0; }
-        .ledger-link { font-size: 0.85rem; color: var(--accent-institutional); text-decoration: none; font-weight: 600; }
-        .ledger-link:hover { text-decoration: underline; }
+  /* ---- Publications ---- */
+  .pub-list{max-width:780px; margin:0 auto; display:flex; flex-direction:column;}
+  .pub-item{
+    display:flex; justify-content:space-between; align-items:baseline;
+    padding:16px 0; border-bottom:1px solid #eee; gap:20px; flex-wrap:wrap;
+  }
+  .pub-item .title{font-weight:700; font-size:14.5px; font-family:'Poppins',sans-serif;}
+  .pub-item .meta{font-size:12.5px; color:var(--gray);}
+  .pub-item a{font-size:12.5px; color:var(--rust); text-decoration:none; white-space:nowrap;}
 
-        /* Clean State-Based Form Card */
-        .form-card {
-            background: var(--surface-color);
-            border: 1px solid var(--border-color);
-            padding: 2rem;
-            position: relative;
-        }
-        form { display: flex; flex-direction: column; gap: 1rem; }
-        input, textarea {
-            background: #FFF;
-            border: 1px solid var(--border-color);
-            color: var(--text-primary);
-            padding: 0.6rem 0.75rem;
-            font-family: inherit;
-            font-size: 0.9rem;
-            width: 100%;
-        }
-        input:focus, textarea:focus { outline: 1px solid var(--accent-institutional); }
-        form button {
-            background: var(--accent-institutional);
-            color: #FFF;
-            border: none;
-            padding: 0.6rem 1.2rem;
-            font-weight: 600;
-            font-size: 0.9rem;
-            cursor: pointer;
-            align-self: flex-start;
-            transition: opacity 0.2s;
-        }
-        form button:hover { opacity: 0.9; }
+  /* ---- Contact / intake ---- (this is the page's "closing" moment:
+       dark bg per §1, mirrored dense field bottom-left per §6's Closing spec) */
+  .contact-wrap{
+    background:var(--dark); color:var(--white);
+  }
+  .contact-inner{
+    max-width:1180px; margin:0 auto; display:grid;
+    grid-template-columns: 1fr 1fr; gap:56px; align-items:start;
+  }
+  @media (max-width:820px){ .contact-inner{grid-template-columns:1fr;} }
+  .contact-info-text{ position:relative; z-index:1; }
+  .contact-wrap h2{color:var(--white);}
+  .contact-info-text p{font-size:14.5px; line-height:1.8; margin:0 0 24px 0; color:#cfc9be;}
+  .contact-wrap .field-strip-svg line{ opacity:0.85; }
 
-        /* Inline success styling */
-        #form-status { display: none; margin-top: 1rem; font-size: 0.9rem; font-weight: 600; }
-        .status-success { color: #059669; }
-        .status-error { color: #DC2626; }
+  /* Real form, restyled for the dark closing section, same fields/behavior as the live site */
+  .form-card{
+    background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.15);
+    border-radius:6px; padding:26px;
+  }
+  .form-card form{ display:flex; flex-direction:column; gap:16px; }
+  .form-card .field{ display:flex; flex-direction:column; gap:5px; }
+  .form-card label{
+    font-family:'Open Sans',sans-serif; font-style:normal; font-weight:700;
+    font-size:13.5px; color:var(--white);
+  }
+  @media (max-width:480px){ .form-card label{ display:none; } }
+  .form-card input, .form-card textarea{
+    background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.2);
+    color:var(--white); padding:11px 12px; font-family:'Open Sans',sans-serif; font-weight:400;
+    font-size:14px; border-radius:4px; width:100%;
+  }
+  .form-card input::placeholder, .form-card textarea::placeholder{ color:#8a8478; font-style:italic; font-weight:400; }
+  .form-card input:focus, .form-card textarea:focus{ outline:1px solid var(--bronze); }
+  .form-card button{
+    background:var(--bronze); color:var(--white); border:none; border-radius:4px;
+    padding:11px 20px; font-weight:700; font-size:14px; cursor:pointer; align-self:flex-start;
+  }
+  #form-status{ display:none; margin-top:12px; font-size:13.5px; font-weight:700; }
+  .status-success{ color:#7fd6b8; }
+  .status-error{ color:#e08b7a; }
 
-        footer { padding: 2rem 0; color: var(--text-secondary); font-size: 0.85rem; text-align: center; }
-    </style>
+  footer{
+    position:relative; z-index:1;
+    padding:28px var(--mx); background:var(--dark); color:#8a8478;
+    border-top:1px solid rgba(255,255,255,0.08);
+    display:flex; justify-content:space-between; font-size:12px; flex-wrap:wrap; gap:10px;
+  }
+</style>
 </head>
 <body>
 
-    <header>
-        <div class="container header-flex">
-            <div class="logo">Telotrope <span>Agents</span></div>
-            <nav>
-                <a href="#research">Research</a>
-                <a href="#pedigree">Pedigree</a>
-                <a href="#publications">Publications</a>
-                <a href="#contact">Contact</a>
-            </nav>
+<header>
+  <div class="header-inner">
+    <img class="wordmark-svg" src="wordmark.svg" alt="Telotrope">
+    <nav>
+      <a href="#capabilities">Capabilities</a>
+      <a href="#values">Values</a>
+      <a href="#pedigree">Pedigree</a>
+      <a href="#publications">Publications</a>
+      <a href="#contact" class="nav-cta">Work With Us</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-field-accent"><img src="hero-field.svg" alt=""></div>
+  <div class="hero-content">
+    <h1>Autonomous systems that stay aligned, understandable, and controllable by you</h1>
+    <p class="subtitle">Telotrope Agents builds goal-reasoning systems that close the gap between stated objectives and what a system actually does when conditions change.</p>
+    <div class="cta-row">
+      <a class="btn-primary" href="telotrope-capability-statement.pdf" target="_blank">Request Capability Statement</a>
+      <a class="btn-secondary" href="https://scholar.google.com/citations?user=9Zru6S0AAAAJ&hl=en" target="_blank" rel="noopener">View Research</a>
+    </div>
+    <hr class="hero-rule">
+    <div class="hero-meta">Federal R&amp;D pedigree &nbsp;|&nbsp; Dayton, Ohio</div>
+  </div>
+</div>
+
+<!-- PROBLEM NARRATIVE -->
+<section class="section-pad tight">
+  <div class="problem">
+    <div>
+      <h2 class="section-title" style="margin:0 0 16px 0;">Where autonomy usually breaks down</h2>
+      <p>Current autonomous systems provide guardrails that constrain performance, but guide it poorly, and post-hoc explanations that excuse decisions rather than truly help you understand them. Vendors tout these solutions because the underlying technology isn't designed for inspection and doesn't understand decisions, only words.</p> 
+      <p>Our solutions are based on goal reasoning and hierarchical planning, techniques that put concrete user goals first, rather than ambiguous language. We treat alignment and controllability as properties a running system maintains, not specification problems solved at design time. We provide true transparency rather than pretty lies, and behavior that users can understand and change.</p>
+    </div>
+    <div class="comic-figure">
+      <img src="comic-cleaning-robot.jpg" alt="Three-panel comic: a cleaning robot dusting a shelf knocks a plant off with its duster, notices the crash, then sweeps up the mess it caused.">
+    </div>
+  </div>
+</section>
+
+<!-- CAPABILITIES -->
+<section id="capabilities" class="section-pad tight">
+  <h2 class="section-title">What we do for you</h2>
+  <p class="section-intro">Artificial intelligence technology that keeps you in control</p>
+  <div class="cap-grid">
+  <div class="cap-row">
+<div class="cap-figure"><img src="goal-state-diagram.svg" alt="Goal-state diagram: Focused, Background, and Inactive states with labeled transitions">
+</div>
+    
+<div class="cap-card">
+      <h3>Inference of Events, Mental States, Goals, and Emotions</h3>
+      <p>An agent's view of the world is very lossy, just like a human's. We give our agents tools to think about what they don't see: underlying events, what other agents and people know, what their goals are, and why they are acting the way they do.</p>
+    </div>
+    
+  </div>
+  <div class="cap-row">
+<div class="cap-card">
+      <h3>Human-Agent Coordination</h3>
+      <p>Working as a team is hard, and it requires understanding of your teammates. Telotrope agents maintain distributed, flexible plans that are responsive to surprise and maintain integrity when not in direct communication.</p>
+    </div>
+    
+<div class="cap-card">
+      <h3>Validated Assistance</h3>
+      <p>Most AI assistance today optimizes for a plausible continuation, not a validated one. Telotrope agents act on the request given, not the request they're prepared for, and are correctable rather than repeating the same mistake indefinitely.</p>
+    </div>
+    
+  </div>
+  <div class="cap-row">
+<div class="cap-card">
+      <h3>Synthetic Population Generation and Analysis</h3>
+      <p>We create population- and individual-scale socio-cognitive simulations based on researched and tested cognitive models, generating scoped predictions about individual and population behavior with strong models and labelled uncertainty.</p>
+    </div>
+    
+<div class="cap-figure"><img src="affect-model-diagram.svg" alt="Affect model: arousal/valence plane showing frustration and engagement"></div>
+  </div>
+</div>
+</section>
+
+<!-- VALUES -->
+<section id="values" class="section-pad">
+  <h2 class="section-title">Agents with values</h2>
+  <p class="section-intro">Much modern AI is profoundly out of step with human values; Telotrope's agents are different</p>
+  <div class="apps">
+    <div class="app-item">
+      <img class="icon-mark" src="icon-alignment.svg" alt="">
+      <div>
+        <h4>Human Alignment</h4>
+        <div class="role">Understanding needs, not just orders</div>
+        <p>Being aligned means attempting to understand the operator's needs and intent, not just following directives blindly. We work with larger statements of intent, modeling an operator's values and long-term priorities to improve understanding and offer proactive solutions.</p>
+      </div>
+    </div>
+    <div class="app-item">
+      <img class="icon-mark" src="icon-controllability.svg" alt="">
+      <div>
+        <h4>Controllability</h4>
+        <div class="role">Staying true to operator intent</div>
+        <p>Agents need to stay true to operators' requests, rather than wandering down a garden path of obvious solutions. Telotrope's agents act on validated plans that pay attention to what you say, rather than learned predictions of what usually comes next; they give you what you want instead of what they remember how to do.</p>
+      </div>
+    </div>
+    <div class="app-item">
+      <img class="icon-mark" src="icon-transparency.svg" alt="">
+      <div>
+        <h4>Transparency</h4>
+        <div class="role">Autonomy you can understand</div>
+        <p>You need to be able to understand and trust an agent working on your behalf. Telotrope systems make important decisions based on transparent reasoning, not opaque networks. They can tell you why a decision was made, and how to change future behavior.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PEDIGREE -->
+<section id="pedigree" class="pedigree-wrap section-pad">
+  <div class="pedigree-inner">
+    <div class="avatar"><img src="matthew-molineaux.jpg" alt="Matthew Molineaux, CEO"></div>
+    <div>
+      <p class="lead">Led by CEO Matthew Molineaux</p>
+      <p>Our team's research on goal reasoning, explanation of past events, cognitive models, and human alignment has been developed and stress-tested across premier federal defense R&amp;D programs, directly contributing to the state of the art in autonomous goal management. This foundation results in alignment, controllability, and transparency that hold up in ways black-box approaches structurally cannot, because our agents reason with observable and inspectable logic rather than opaque networks. We continue extending this foundation into new domains wherever an autonomous system needs to stay understandable and correctable.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PUBLICATIONS -->
+<section id="publications" class="section-pad tight">
+  <h2 class="section-title">Selected research</h2>
+  <p class="section-intro">Foundational papers behind the goal-reasoning and alignment methods above.</p>
+  <div class="pub-list">
+    <div class="pub-item">
+      <div><div class="title">Goal-Driven Autonomy for Responding to Unexpected Events</div>
+      <div class="meta">M. Molineaux, M. Klenk, D. W. Aha &nbsp;|&nbsp; Strategy Simulation Analysis</div></div>
+      <a href="https://apps.dtic.mil/sti/tr/pdf/ADA559963.pdf" target="_blank">Technical Report (PDF) ↗</a>
+    </div>
+    <div class="pub-item">
+      <div><div class="title">Goal-based Team Crisis Intervention</div>
+      <div class="meta">M. Molineaux, M. Cox &nbsp;|&nbsp; Advances in Cognitive Systems</div></div>
+      <a href="http://www.cogsys.org/journal/volume9/article-9-5.pdf" target="_blank">Journal Publication (PDF) ↗</a>
+    </div>
+    <div class="pub-item">
+      <div><div class="title">The Case for Case-Based Transfer Learning</div>
+      <div class="meta">M. Klenk, D. W. Aha, M. Molineaux &nbsp;|&nbsp; AAAI AI Magazine</div></div>
+      <a href="https://www.researchgate.net/publication/220604949_The_Case_for_Case-Based_Transfer_Learning" target="_blank">Via ResearchGate ↗</a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact-wrap section-pad">
+  <div class="contact-inner">
+    <div class="contact-info">
+      <div class="contact-info-text">
+        <h2 class="section-title" style="margin:0 0 12px 0;">Work with us</h2>
+        <p class="section-intro" style="color:#cfc9be; margin:0 0 20px 0;">Please inquire about technical capabilities, teaming, and custom development needs.</p>
+        <p>Telotrope Agents LLC<br>Matthew Molineaux, CEO<br>Dayton, Ohio Region</p>
+      </div>
+    </div>
+    <div class="form-card">
+      <form id="rt-contact-form" action="https://formspree.io/f/mqevjlpj" method="POST">
+        <div class="field">
+          <label for="ct-name">Name</label>
+          <input id="ct-name" type="text" name="name" placeholder="e.g. Jane Doe" required="">
         </div>
-    </header>
-
-    <main class="container">
-
-        <div id="research" class="split-grid">
-            <div class="left-col">
-                <h1>Advanced Autonomy & Decision Support</h1>
-                <p>Telotrope Agents is an R&D firm specializing in computational intelligence frameworks for high-stakes operational environments.</p>
-                <p>We build action-oriented, non-conversational architectures engineered for deterministic execution, robust goal adaptation, and high-fidelity simulation.</p>
-                <div class="tech-focus-box">
-                    <h3>Operational Parameter</h3>
-                    <p>Our agent architectures operate completely outside the risk profiles of generative language models—ensuring zero hallucination risk and strict compliance with execution matrices.</p>
-                </div>
-            </div>
-            <div class="bullet-list">
-                <div class="bullet-item">
-                    <h3>Goal Reasoning & Planning</h3>
-                    <p>Enabling software agents to evaluate their own objectives, detect system/environmental discrepancies, and self-select new tracks mid-mission.</p>
-                </div>
-                <div class="bullet-item">
-                    <h3>Simulation & Adversarial AI</h3>
-                    <p>Constructing rule-bound synthetic environments and discrete reasoning logic for combat modeling, wargaming, and strategic stress-testing.</p>
-                </div>
-                <div class="bullet-item">
-                    <h3>System Diagnosis</h3>
-                    <p>Automated diagnostic reasoning models structured to isolate operational anomalies and yield explainable windows for human operators.</p>
-                </div>
-                <div class="bullet-item">
-                    <h3>Individual Alignment</h3>
-                    <p>Bespoke software logic modeled to mathematically capture and match the precise strategic intent and parameters of a distinct command structure.</p>
-                </div>
-            </div>
+        <div class="field">
+          <label for="ct-email">Email</label>
+          <input id="ct-email" type="email" name="email" placeholder="e.g. jane@agency.gov" required="">
         </div>
-
-        <div id="pedigree" class="split-grid">
-            <div class="left-col">
-                <h2>Proven Pedigree</h2>
-                <p>The core computational logic deployed by Telotrope Agents has been architected and stress-tested across premier national security and defense R&D frameworks.</p>
-                <p>Led by CEO Matthew Molineaux, our personnel bring a documented background delivering advanced contract-based solutions for federal labs, contributing directly to the state-of-the-art in autonomous goal management and case-based reasoning.</p>
-            </div>
-            <div id="publications" class="ledger">
-                <h2 style="font-size: 1.25rem; margin-bottom: 0.5rem; color: var(--text-primary);">Selected Research Index</h2>
-                
-                <div class="ledger-item">
-                    <div class="ledger-title">Goal-Driven Autonomy for Responding to Unexpected Events</div>
-                    <div class="ledger-meta">M. Molineaux, M. Klenk, D. W. Aha | Strategy Simulation Analysis</div>
-                    <a href="https://apps.dtic.mil/sti/tr/pdf/ADA559963.pdf" target="_blank" class="ledger-link">Download Technical Report (PDF) ↗</a>
-                </div>
-
-                <div class="ledger-item">
-                    <div class="ledger-title">Goal-based Team Crisis Intervention</div>
-                    <div class="ledger-meta">M. Molineaux, M. Cox | Advances in Cognitive Systems</div>
-                    <a href="http://www.cogsys.org/journal/volume9/article-9-5.pdf" target="_blank" class="ledger-link">Read Journal Publication (PDF) ↗</a>
-                </div>
-
-                <div class="ledger-item">
-                    <div class="ledger-title">The Case for Case-Based Transfer Learning</div>
-                    <div class="ledger-meta">M. Klenk, D. W. Aha, M. Molineaux | AAAI AI Magazine</div>
-                    <a href="https://www.researchgate.net/publication/220604949_The_Case_for_Case-Based_Transfer_Learning" target="_blank" class="ledger-link">Access via ResearchGate ↗</a>
-                </div>
-            </div>
+        <div class="field">
+          <label for="ct-message">Message</label>
+          <textarea id="ct-message" name="message" rows="4" placeholder="e.g. Briefly describe your request" required=""></textarea>
         </div>
+        <button type="submit" id="submit-btn" class="btn-primary">Submit Request</button>
+      </form>
+      <div id="form-status"></div>
+    </div>
+  </div>
+</section>
 
-        <div id="contact" class="split-grid" style="border-bottom: none;">
-            <div class="left-col">
-                <h2>Corporate Intake</h2>
-                <p>Inquiries regarding technical capability statements, SBIR teaming, or secure briefings can be routed directly to leadership.</p>
-                <p style="font-size: 0.9rem; margin-top: 2rem;">
-                    <strong>Telotrope Agents LLC</strong><br>
-                    Matthew Molineaux, CEO<br>
-                    Dayton, Ohio Region
-                </p>
-            </div>
-            <div class="form-card">
-                <form id="rt-contact-form" action="https://formspree.io/f/mqevjlpj" method="POST">
-                    <input type="text" name="name" placeholder="Authorized Contact Name" required>
-                    <input type="email" name="email" placeholder="Organization Email (.gov / .com)" required>
-                    <textarea name="message" rows="4" placeholder="Nature of Request (Research Alignment / Briefing)" required></textarea>
-                    <button type="submit" id="submit-btn">Submit Request</button>
-                </form>
-                <div id="form-status"></div>
-            </div>
-        </div>
+<footer>
+  <span>&copy; 2026 Telotrope Agents LLC. All rights reserved.</span>
+  <span>telotrope.ai</span>
+</footer>
 
-    </main>
+<script>
+  const form = document.getElementById("rt-contact-form");
+  const status = document.getElementById("form-status");
+  const submitBtn = document.getElementById("submit-btn");
 
-    <footer>
-        <div class="container">
-            &copy; 2026 Telotrope Agents LLC. All rights reserved.
-        </div>
-    </footer>
-
-    <script>
-        const form = document.getElementById("rt-contact-form");
-        const status = document.getElementById("form-status");
-        const submitBtn = document.getElementById("submit-btn");
-
-        form.addEventListener("submit", async function(event) {
-            event.preventDefault(); // Stop standard redirect/popup behavior
-            
-            submitBtn.disabled = true;
-            submitBtn.textContent = "Transmitting...";
-            
-            const data = new FormData(event.target);
-            
-            try {
-                const response = await fetch(form.action, {
-                    method: form.method,
-                    body: data,
-                    headers: { 'Accept': 'application/json' }
-                });
-                
-                if (response.ok) {
-                    status.innerHTML = "Transmission successfully cataloged.";
-                    status.className = "status-success";
-                    status.style.display = "block";
-                    form.reset();
-                    form.style.display = "none"; // Hide form cleanly on success
-                } else {
-                    const errorData = await response.json();
-                    throw new Error(errorData.errors ? errorData.errors.map(e => e.message).join(', ') : "Transmission failed.");
-                }
-            } catch (error) {
-                status.innerHTML = "Error: Unable to transmit request. Please verify connection.";
-                status.className = "status-error";
-                status.style.display = "block";
-                submitBtn.disabled = false;
-                submitBtn.textContent = "Submit Request";
-            }
-        });
-    </script>
+  form.addEventListener("submit", async function(event) {
+    event.preventDefault();
+    submitBtn.disabled = true;
+    submitBtn.textContent = "Transmitting...";
+    const data = new FormData(event.target);
+    try {
+      const response = await fetch(form.action, {
+        method: form.method,
+        body: data,
+        headers: { 'Accept': 'application/json' }
+      });
+      if (response.ok) {
+        status.innerHTML = "Transmission successfully cataloged.";
+        status.className = "status-success";
+        status.style.display = "block";
+        form.reset();
+        form.style.display = "none";
+      } else {
+        const errorData = await response.json();
+        throw new Error(errorData.errors ? errorData.errors.map(e => e.message).join(', ') : "Transmission failed.");
+      }
+    } catch (error) {
+      status.innerHTML = "Error: Unable to transmit request. Please verify connection.";
+      status.className = "status-error";
+      status.style.display = "block";
+      submitBtn.disabled = false;
+      submitBtn.textContent = "Submit Request";
+    }
+  });
+</script>
 </body>
 </html>

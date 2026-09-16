@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   class="deepdive-svg"
+   viewBox="20 30 498 285"
+   font-family="Segoe UI, Calibri, Helvetica, Arial, sans-serif"
+   version="1.1"
+   id="svg33"
+   sodipodi:docname="goal_state_machine_v4.svg"
+   inkscape:version="1.4.4 (dcaf3e7, 2026-05-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg" xmlns:c2pa="http://c2pa.org/manifest"><metadata><c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTo5ODI0ZDM0Ny05NTNjLTRlNTUtYjhkMC1mYjhiMjVkZGQ5MGMAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaDs5bL9z+iGq5WBpPUYof0IAAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDo3NzVjMjEzYS0zMzRkLTRmYjItYTU0NS1lNGJkZTZkYzM0MGZscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNoz9Uj1vexEKuF7WqOEGomzQAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFgg5YJxHN98mGNXCACu8Fj1Y78ydPxk1HUPKjGsq4VD5MqkZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaPPK1SU7Aek3vmsVZK/BQ2EAAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRMAAAAAAAAAAAAAAAAZGhhc2hYIIfaT/mgTfDrfWFvYahcbExTyPA+WcHlMye+LCBhTE9sZG5hbWVuanVtYmYgbWFuaWZlc3RqZXhjbHVzaW9uc4GiZXN0YXJ0GQJHZmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOjk4MjRkMzQ3LTk1M2MtNGU1NS1iOGQwLWZiOGIyNWRkZDkwYy9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOjAxOTQ3MmRjLTAwZGMtNDQwNC05NjBhLTBhNzg4OThiZTEwOXJjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCDlgnEc33yYY1cIAK7wWPVjvzJ0/GTUdQ8qMayrhUPkyqJjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFggv/XRknbtZYj+SCR3uOEgq+RqI2sRme7PYd9fRammonuiY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFggxxv566dIIpGo0Nn/+fwDPeW5lDnMq1N7GDHzWL5XYgR0Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQH92gYgLtWRG1HHipqzXD6b5+cShfMyvMYItYvzl2L9d7O3sF+H6GtoN6tSR7x2/QalThIsOzPKlGojbA7lyisU=</c2pa:manifest></metadata>
+  <sodipodi:namedview
+     id="namedview33"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.8821076"
+     inkscape:cx="450.0274"
+     inkscape:cy="235.10877"
+     inkscape:window-width="2560"
+     inkscape:window-height="1511"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg33" />
+  <defs
+     id="defs1">
+    <marker
+       id="a"
+       viewBox="0 0 10 10"
+       refX="9"
+       refY="5"
+       markerWidth="7"
+       markerHeight="7"
+       orient="auto-start-reverse">
+      <path
+         d="M 0 0 L 10 5 L 0 10 z"
+         fill="#8a4b1f"
+         id="path1" />
+    </marker>
+    <marker
+       id="a-1"
+       viewBox="0 0 10 10"
+       refX="9"
+       refY="5"
+       markerWidth="7"
+       markerHeight="7"
+       orient="auto-start-reverse">
+      <path
+         d="M 0,0 10,5 0,10 Z"
+         fill="#8a4b1f"
+         id="path1-1" />
+    </marker>
+    <marker
+       id="a-1-6"
+       viewBox="0 0 10 10"
+       refX="9"
+       refY="5"
+       markerWidth="7"
+       markerHeight="7"
+       orient="auto-start-reverse">
+      <path
+         d="M 0,0 10,5 0,10 Z"
+         fill="#8a4b1f"
+         id="path1-1-1" />
+    </marker>
+    <marker
+       id="a-7"
+       viewBox="0 0 10 10"
+       refX="9"
+       refY="5"
+       markerWidth="7"
+       markerHeight="7"
+       orient="auto-start-reverse">
+      <path
+         d="M 0,0 10,5 0,10 Z"
+         fill="#8a4b1f"
+         id="path1-6" />
+    </marker>
+  </defs>
+  <!-- entry -->
+  <text
+     x="56.072216"
+     y="129.59949"
+     font-size="9.5px"
+     fill="#6b6b6b"
+     id="text1"
+     style="font-size:13.33333333px"
+     inkscape:export-filename="goal_machine.png"
+     inkscape:export-xdpi="600"
+     inkscape:export-ydpi="600">adopt*</text>
+  <line
+     x1="26"
+     y1="136"
+     x2="126"
+     y2="136"
+     stroke="#8a4b1f"
+     stroke-width="1.6"
+     marker-end="url(#a)"
+     id="line2" />
+  <!-- Focused -->
+  <rect
+     x="130"
+     y="100"
+     width="170"
+     height="43.818527"
+     rx="8"
+     fill="#f2e2d2"
+     stroke="#8a4b1f"
+     stroke-width="2.4"
+     id="rect2" />
+  <text
+     x="214.92839"
+     y="127"
+     font-size="15px"
+     font-weight="600"
+     fill="#3d3d3d"
+     text-anchor="middle"
+     id="text3"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.6667px;font-family:Arial;-inkscape-font-specification:Arial">Focused</text>
+  <!-- Background -->
+  <rect
+     x="130"
+     y="220"
+     width="170"
+     height="46.426758"
+     rx="8"
+     fill="#fdf4ec"
+     stroke="#8a4b1f"
+     stroke-width="1.6"
+     id="rect4" />
+  <text
+     x="214.99284"
+     y="247"
+     font-size="15px"
+     fill="#3d3d3d"
+     text-anchor="middle"
+     id="text5"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.6667px;font-family:Arial;-inkscape-font-specification:Arial">Background</text>
+  <!-- Focused self loops -->
+  <path
+     d="M 160.72434,96.885265 C 152.62493,62.402074 79.122974,97.642082 130,130"
+     fill="none"
+     stroke="#8a4b1f"
+     stroke-width="2"
+     marker-end="url(#a)"
+     id="path6"
+     style="stroke-width:1.6;stroke-dasharray:none"
+     sodipodi:nodetypes="cc" />
+  <rect
+     x="170.11238"
+     y="36.280769"
+     width="89.77523"
+     height="34.419231"
+     rx="6.601119"
+     fill="#8a4b1f"
+     id="rect6"
+     style="stroke-width:0.999996" />
+  <text
+     x="214.97722"
+     y="49.517857"
+     font-size="10px"
+     font-weight="600"
+     fill="#ffffff"
+     text-anchor="middle"
+     id="text7"
+     style="font-size:11px"><tspan
+       sodipodi:role="line"
+       id="tspan33"
+       x="214.97722"
+       y="48"
+       style="font-size:11px">take action</tspan><tspan
+       sodipodi:role="line"
+       id="tspan34"
+       x="214.97722"
+       y="63"
+       style="font-size:11px">OBSERVABLE</tspan></text>
+  <path
+     d="m 191.97112,100 c 9.00222,-29.299999 36.67884,-27.541453 44,0"
+     fill="none"
+     stroke="#8a4b1f"
+     stroke-width="1.4"
+     marker-end="url(#a)"
+     id="path7"
+     style="stroke-width:1.6;stroke-dasharray:none"
+     sodipodi:nodetypes="cc" />
+  <text
+     x="108.7885"
+     y="73.824432"
+     font-size="10px"
+     fill="#6b6b6b"
+     id="text8"
+     style="font-size:13.3333px">subgoal*</text>
+  <!-- Focused <-> Background -->
+  <text
+     x="175.65881"
+     y="187.03764"
+     font-size="10px"
+     fill="#6b6b6b"
+     text-anchor="end"
+     id="text11"
+     style="font-size:13.3333px">defocus</text>
+  <text
+     x="255.96536"
+     y="187.03764"
+     font-size="10px"
+     fill="#6b6b6b"
+     id="text14"
+     style="font-size:13.3333px">focus</text>
+  <text
+     x="314.25729"
+     y="89.540565"
+     font-size="10px"
+     fill="#6b6b6b"
+     id="text14-2"
+     style="font-size:13.3333px">abandon</text>
+  <text
+     x="320.17825"
+     y="168.2979"
+     font-size="10px"
+     fill="#6b6b6b"
+     id="text14-2-8"
+     style="font-size:13.3333px">satisfy</text>
+  <!-- Background self loop -->
+  <path
+     d="m 187.75524,267.22676 c 16.2918,38.73372 38.80844,22.79415 54.56892,0"
+     fill="none"
+     stroke="#8a4b1f"
+     stroke-width="1.4"
+     marker-end="url(#a)"
+     id="path14"
+     style="stroke-width:1.6;stroke-dasharray:none"
+     sodipodi:nodetypes="cc" />
+  <text
+     x="214.72656"
+     y="305.21643"
+     font-size="10px"
+     fill="#6b6b6b"
+     text-anchor="middle"
+     id="text15"
+     style="font-size:13.3333px">reprioritize</text>
+  <!-- Focused -> Achieved -->
+  <rect
+     x="380"
+     y="98"
+     width="130"
+     height="46"
+     rx="8"
+     fill="#f6efe6"
+     stroke="#8a4b1f"
+     stroke-width="1.6"
+     id="rect16" />
+  <text
+     x="445"
+     y="127"
+     font-size="13.5px"
+     fill="#3d3d3d"
+     text-anchor="middle"
+     id="text17"
+     style="font-size:14.66666667px;-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">Inactive</text>
+  <!-- Focused -> Abandoned -->
+  <!-- divider -->
+
+  <path
+     d="M 300,133.90926 C 323.73027,161.22754 353.08182,161.22754 380,133"
+     fill="none"
+     stroke="#8a4b1f"
+     stroke-width="1.4"
+     marker-end="url(#a-1)"
+     id="path14-2"
+     style="stroke-width:1.6;stroke-dasharray:none;marker-end:url(#a-1)"
+     sodipodi:nodetypes="cc" />
+  <path
+     d="m 299.60396,118.17645 c 23.73027,-27.318281 53.08182,-27.318281 80,0.90926"
+     fill="none"
+     stroke="#8a4b1f"
+     stroke-width="1.4"
+     marker-end="url(#a-1-6)"
+     id="path14-2-2"
+     style="stroke-width:1.6;stroke-dasharray:none;marker-end:url(#a-1-6)"
+     sodipodi:nodetypes="cc" />
+  <g
+     id="g41"
+     transform="translate(-2.1393)">
+    <path
+       d="m 235.2981,218.6527 c 17.09285,-21.82498 18.21909,-43.68668 0,-74.94892"
+       fill="none"
+       stroke="#8a4b1f"
+       stroke-width="1.6"
+       marker-end="url(#a)"
+       id="path11"
+       sodipodi:nodetypes="cc" />
+    <path
+       d="m 198.9805,144.54413 c -17.09285,21.82498 -18.21909,43.68668 0,74.94892"
+       fill="none"
+       stroke="#8a4b1f"
+       stroke-width="1.6"
+       marker-end="url(#a-7)"
+       id="path11-8"
+       sodipodi:nodetypes="cc"
+       style="marker-end:url(#a-7)" />
+  </g>
+</svg>
